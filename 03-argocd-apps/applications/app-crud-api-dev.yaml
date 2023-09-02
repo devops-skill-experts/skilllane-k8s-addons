@@ -22,6 +22,7 @@ spec:
           valueFiles:
             - values.yaml
             - values-development.yaml
+            - values-tags-development.yaml
       destination:
         name: in-cluster
         namespace: crud-api-development
