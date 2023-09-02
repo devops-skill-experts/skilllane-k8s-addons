@@ -1,5 +1,13 @@
 #!/bin/bash
 
+if [[ ${KUBECONFIG} == "" ]]
+then
+    echo "Please export KUBECONFIG env variable before running script!!!"
+    exit 1
+else
+    echo "Current value of KUBECONFIG --> [${KUBECONFIG}]"
+fi
+
 SRC_FILE=.env
 DST_FILE=/tmp/initial-secrets.yaml
 SECRET=initial-secret
