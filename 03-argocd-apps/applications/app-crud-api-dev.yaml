@@ -1,0 +1,33 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: crud-api-development
+spec:
+  generators:
+  - clusters:
+      selector:
+        matchLabels:
+          custom: "true"
+  template:
+    metadata:
+      name: 'crud-api-development'
+    spec:
+      project: "default"
+      source:
+        repoURL: https://github.com/devops-skill-experts/skilllane-apps-deployment.git
+        targetRevision: "development" #Based on environment
+        path: 'crud-api'
+        helm:
+          ignoreMissingValueFiles: true
+          valueFiles:
+            - values.yaml
+            - values-development.yaml
+      destination:
+        name: in-cluster
+        namespace: crud-api-development
+      syncPolicy:
+        automated:
+          selfHeal: true
+          prune: true
+        syncOptions:
+          - CreateNamespace=true
