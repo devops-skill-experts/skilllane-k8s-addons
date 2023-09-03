@@ -1,0 +1,10 @@
+jenkins-operator:
+  enabled: true
+
+  jenkins:
+    namespace: "jenkins"
+    enabled: false
+    backup:
+      enabled: false
+      pvc:
+        enabled: false
