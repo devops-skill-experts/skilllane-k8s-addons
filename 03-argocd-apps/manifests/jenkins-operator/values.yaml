@@ -5,3 +5,5 @@ jenkins-operator:
     enabled: false
     backup:
       enabled: false
+      pvc:
+        enabled: false
