@@ -3,3 +3,5 @@ jenkins-operator:
 
   jenkins:
     enabled: false
+    backup:
+      enabled: false
