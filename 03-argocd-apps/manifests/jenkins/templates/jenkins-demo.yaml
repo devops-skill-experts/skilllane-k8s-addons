@@ -48,7 +48,7 @@ spec:
             memory: 500Mi
   seedJobs:
     - id: crud-api
-      targets: "jenkins-cicd/job.jenkins"
-      description: "CRUD API Demo"
+      targets: "jenkins-cicd/multibranch-build.jenkins"
+      description: "Multi Branch Pipeline for CRUD-API"
       repositoryBranch: develop
       repositoryUrl: https://github.com/devops-skill-experts/skilllane-crud-example.git
