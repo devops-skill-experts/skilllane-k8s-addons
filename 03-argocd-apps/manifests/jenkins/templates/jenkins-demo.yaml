@@ -54,7 +54,7 @@ spec:
       repositoryUrl: https://github.com/jenkinsci/kubernetes-operator.git
 
     - id: crud-api
-      targets: "cicd/jobs/*.jenkins"
+      targets: "jenkins-cicd/job.jenkins"
       description: "CRUD API Demo"
       repositoryBranch: develop
       repositoryUrl: https://github.com/devops-skill-experts/skilllane-crud-example.git
