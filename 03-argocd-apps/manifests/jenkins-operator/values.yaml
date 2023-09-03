@@ -1,0 +1,5 @@
+jenkins-operator:
+  enabled: true
+
+  jenkins:
+    enabled: false
