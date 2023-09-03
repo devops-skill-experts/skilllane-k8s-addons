@@ -6,7 +6,7 @@ spec:
   configurationAsCode:
     configurations: []
     secret:
-      name: "demo-jenkins-secret"
+      name: "" #"demo-jenkins-secret"
   groovyScripts:
     configurations: []
     secret:
