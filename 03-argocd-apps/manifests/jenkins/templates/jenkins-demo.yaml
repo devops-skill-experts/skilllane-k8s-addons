@@ -6,11 +6,11 @@ spec:
   configurationAsCode:
     configurations: []
     secret:
-      name: ""
+      name: "demo-jenkins-secret"
   groovyScripts:
     configurations: []
     secret:
-      name: "demo-jenkins-secret"
+      name: ""
   jenkinsAPISettings:
     authorizationStrategy: createUser
   master:
