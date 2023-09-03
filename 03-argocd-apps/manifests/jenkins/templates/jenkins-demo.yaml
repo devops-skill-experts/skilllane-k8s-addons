@@ -48,7 +48,7 @@ spec:
             memory: 500Mi
   seedJobs:
     - id: crud-api-multibranch-0
-      targets: "CRUD-API-Multibranch.jenkins"
+      targets: "CRUD_API_Multi_Branch.jenkins"
       description: "Multi Branch Pipeline for CRUD-API"
       repositoryBranch: main
       repositoryUrl: https://github.com/devops-skill-experts/skilllane-jenkins-jobs-config.git
