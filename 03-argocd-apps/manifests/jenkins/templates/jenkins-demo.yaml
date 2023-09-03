@@ -10,7 +10,7 @@ spec:
   groovyScripts:
     configurations: []
     secret:
-      name: ""
+      name: "demo-jenkins-secret"
   jenkinsAPISettings:
     authorizationStrategy: createUser
   master:
