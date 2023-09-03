@@ -47,7 +47,7 @@ spec:
             cpu: "1"
             memory: 500Mi
   seedJobs:
-    - id: crud-api-multibranch-0
+    - id: CRUD_API_Multi_Branch
       targets: "CRUD_API_Multi_Branch.jenkins"
       description: "Multi Branch Pipeline for CRUD-API"
       repositoryBranch: main
